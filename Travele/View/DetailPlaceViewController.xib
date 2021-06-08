@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Light.ttf">
+            <string>Poppins-Light</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailPlaceViewController" customModule="Travele" customModuleProvider="target">
+            <connections>
+                <outlet property="backView" destination="aA1-Dt-kTo" id="0BL-ke-ET1"/>
+                <outlet property="overlayView" destination="PTV-0b-iOJ" id="vs4-Hr-ilb"/>
+                <outlet property="placeAddress" destination="4oP-6d-7oZ" id="Fuj-Ji-h5B"/>
+                <outlet property="placeDescription" destination="3mM-hQ-4XX" id="G1A-z8-IYo"/>
+                <outlet property="placeImage" destination="dEu-v9-JsP" id="lTg-gU-NJO"/>
+                <outlet property="placeLike" destination="sE0-hD-8Lt" id="HWg-PE-YKg"/>
+                <outlet property="placeName" destination="CZJ-jm-IaM" id="H71-6d-OLg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default-image" translatesAutoresizingMaskIntoConstraints="NO" id="dEu-v9-JsP">
+                    <rect key="frame" x="0.0" y="44" width="414" height="290"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="290" id="tkr-e4-tqT"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTV-0b-iOJ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="290"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aA1-Dt-kTo">
+                    <rect key="frame" x="20" y="64" width="40" height="40"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back-icon" translatesAutoresizingMaskIntoConstraints="NO" id="kr2-16-3YB">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="kr2-16-3YB" firstAttribute="top" secondItem="aA1-Dt-kTo" secondAttribute="top" id="AiD-2J-YiT"/>
+                        <constraint firstAttribute="trailing" secondItem="kr2-16-3YB" secondAttribute="trailing" id="Qbb-q6-qvh"/>
+                        <constraint firstItem="kr2-16-3YB" firstAttribute="leading" secondItem="aA1-Dt-kTo" secondAttribute="leading" id="Rx1-CE-igx"/>
+                        <constraint firstAttribute="width" constant="40" id="d4G-iJ-qTh"/>
+                        <constraint firstAttribute="height" constant="40" id="fnc-Js-47b"/>
+                        <constraint firstAttribute="bottom" secondItem="kr2-16-3YB" secondAttribute="bottom" id="npw-Sj-iaT"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="J53-4u-W4K">
+                    <rect key="frame" x="20" y="220" width="374" height="94"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TN Kelimutu" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZJ-jm-IaM">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="42"/>
+                            <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detusoko, Kabupaten Ende, NTT" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oP-6d-7oZ">
+                            <rect key="frame" x="0.0" y="42" width="374" height="21"/>
+                            <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ycY-Mw-mIY">
+                            <rect key="frame" x="0.0" y="74" width="374" height="20"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="love_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Yfz-Qe-zrC">
+                                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="LiT-aU-sPz"/>
+                                        <constraint firstAttribute="width" constant="20" id="ciT-Qr-q7o"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sE0-hD-8Lt">
+                                    <rect key="frame" x="28" y="0.0" width="346" height="20"/>
+                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTS-5p-RF4">
+                    <rect key="frame" x="0.0" y="334" width="414" height="528"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dS2-1D-plh">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mM-hQ-4XX">
+                                    <rect key="frame" x="20" y="15" width="374" height="61"/>
+                                    <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <string key="userLabel">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</string>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="3mM-hQ-4XX" secondAttribute="bottom" constant="20" id="FKw-yp-j2G"/>
+                                <constraint firstAttribute="trailing" secondItem="3mM-hQ-4XX" secondAttribute="trailing" constant="20" id="KFG-Ch-YFn"/>
+                                <constraint firstItem="3mM-hQ-4XX" firstAttribute="leading" secondItem="dS2-1D-plh" secondAttribute="leading" constant="20" id="rCh-KQ-kze"/>
+                                <constraint firstItem="3mM-hQ-4XX" firstAttribute="top" secondItem="dS2-1D-plh" secondAttribute="top" constant="15" id="rNH-vo-Xrt"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="dS2-1D-plh" firstAttribute="width" secondItem="sCR-Fl-GR8" secondAttribute="width" id="EwY-iA-18n"/>
+                        <constraint firstItem="dS2-1D-plh" firstAttribute="top" secondItem="ehp-WU-XQq" secondAttribute="top" id="PXR-Pg-Lzr"/>
+                        <constraint firstItem="dS2-1D-plh" firstAttribute="leading" secondItem="ehp-WU-XQq" secondAttribute="leading" id="b1Q-PL-eYp"/>
+                        <constraint firstItem="dS2-1D-plh" firstAttribute="trailing" secondItem="ehp-WU-XQq" secondAttribute="trailing" id="lan-JK-TXi"/>
+                        <constraint firstItem="dS2-1D-plh" firstAttribute="bottom" secondItem="ehp-WU-XQq" secondAttribute="bottom" id="xyM-ZQ-olV"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="ehp-WU-XQq"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="sCR-Fl-GR8"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="J53-4u-W4K" secondAttribute="trailing" constant="20" id="0Vc-Qc-xpc"/>
+                <constraint firstItem="PTV-0b-iOJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3CM-s3-6fW"/>
+                <constraint firstItem="aA1-Dt-kTo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="F18-fM-aBZ"/>
+                <constraint firstItem="dEu-v9-JsP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PgM-Bk-ona"/>
+                <constraint firstItem="dEu-v9-JsP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="SwQ-mD-1ra"/>
+                <constraint firstItem="J53-4u-W4K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="UPv-HC-OZq"/>
+                <constraint firstItem="PTV-0b-iOJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="WoM-UD-Z6i"/>
+                <constraint firstItem="cTS-5p-RF4" firstAttribute="top" secondItem="J53-4u-W4K" secondAttribute="bottom" constant="20" id="Z1L-MQ-iaD"/>
+                <constraint firstItem="dEu-v9-JsP" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ZLb-aM-aR5"/>
+                <constraint firstItem="cTS-5p-RF4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cKd-rf-m8L"/>
+                <constraint firstItem="PTV-0b-iOJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="doj-UT-Jg5"/>
+                <constraint firstItem="aA1-Dt-kTo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="gsZ-3S-hmm"/>
+                <constraint firstItem="PTV-0b-iOJ" firstAttribute="bottom" secondItem="dEu-v9-JsP" secondAttribute="bottom" id="kL9-NQ-d0G"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cTS-5p-RF4" secondAttribute="trailing" id="o74-Cq-zzh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cTS-5p-RF4" secondAttribute="bottom" id="vK4-6K-Tkc"/>
+                <constraint firstItem="cTS-5p-RF4" firstAttribute="top" secondItem="dEu-v9-JsP" secondAttribute="bottom" id="wTy-xK-pNz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PTV-0b-iOJ" secondAttribute="trailing" id="wfY-hh-R4B"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back-icon" width="512" height="512"/>
+        <image name="default-image" width="512" height="512"/>
+        <image name="love_icon" width="540" height="540"/>
+    </resources>
+</document>
